@@ -1,0 +1,78 @@
+*{
+margin: 0px;
+padding: 0px;
+font-family: 'Karla', sans-serif;
+}
+
+body{
+    background: rgb(2,0,36);
+}
+
+.searchbar{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    display: flex;
+    min-width: 100px;
+}
+
+.searchinp{
+    border: 3px solid yellow;
+    height: 20px;
+    width: 300px;
+    padding: 8px 23px 8px 30px;
+    outline: 0;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400%, 400%;
+    transition: 1.2s all ease;
+    border-radius: 5px;
+}
+
+.searchinp:hover, .searchinp:focus {
+    animation: change 6s ease-in-out infinite;
+    width: 400px;
+
+}
+
+::placeholder{
+    color: yellow;
+}
+
+i{
+    color: yellow;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    width: 14px;
+    transition: 0.5s ease;
+}
+
+
+button{
+    border: 3px solid yellow;
+    margin-left: 20px;
+    background-color:  black;
+    width: 150px;
+    height: 42px;
+    transition: ease 0.8s all;
+    color: yellow;
+    border-radius: 5px;
+
+}
+
+button:hover, button:focus{
+background-color: rgb(48, 48, 48);
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+
+}
